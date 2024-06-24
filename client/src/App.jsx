@@ -1,9 +1,7 @@
+import Home from "./components/pages/Home";
+
 function App() {
-  return (
-    <>
-      <h1 className="text-lg">Project initialize</h1>
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
