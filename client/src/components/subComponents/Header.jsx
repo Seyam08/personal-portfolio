@@ -7,15 +7,18 @@ import { navlinks } from "../../constants/navLinks";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState(() => {
+    const storedTheme = localStorage.getItem("theme");
+    return storedTheme
+      ? storedTheme
+      : window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  });
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -26,7 +29,9 @@ export default function Header() {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme((prev) => {
+      return prev === "dark" ? "light" : "dark";
+    });
   };
 
   return (
