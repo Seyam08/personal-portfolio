@@ -12,9 +12,9 @@ export default function Home() {
     <Layout>
       <div className="flex flex-row">
         <div className="max-w-xl basis-3/4">
-          <Emoji customClass={"animate_up"}>👋</Emoji>
+          <Emoji customClass={"animate-up"}>👋</Emoji>
           <Heading>Hello there! I&apos;m John</Heading>
-          <Paragraph customClass={"my-3 animate_up"}>
+          <Paragraph customClass={"my-3 animate-up"}>
             I&apos;m a full-stack developer that loves building products and web
             apps that can impact millions of lives I&apos;m a senior software
             engineer with 7 years of experience building scalable web apps that
