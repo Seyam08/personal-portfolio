@@ -7,3 +7,8 @@
     @apply font-sans;
   }
 }
+@layer components {
+  .animate_up {
+    @apply animate-fade-up;
+  }
+}

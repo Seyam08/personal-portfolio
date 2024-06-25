@@ -1,7 +1,7 @@
-import Home from "./components/pages/Home";
+import Wrapper from "./components/Wrapper";
 
 function App() {
-  return <Home />;
+  return <Wrapper />;
 }
 
 export default App;

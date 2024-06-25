@@ -1,3 +1,7 @@
-export default function Emoji({ children }) {
-  return <span className="text-xl md:text-2xl lg:text-4xl">{children}</span>;
+export default function Emoji({ children, customClass }) {
+  return (
+    <div className={`text-xl md:text-2xl lg:text-4xl ${customClass}`}>
+      {children}
+    </div>
+  );
 }
