@@ -5,20 +5,19 @@ import Heading from "../subComponents/Heading";
 import ListItem from "../subComponents/ListItem";
 import Paragraph from "../subComponents/Paragraph";
 import Title from "../subComponents/Title";
-import Layout from "./Layout";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <div className="flex flex-row">
         <div className="max-w-xl basis-3/4">
           <Emoji customClass={"animate-up"}>👋</Emoji>
-          <Heading>Hello there! I&apos;m John</Heading>
+          <Heading>Hello! Seyam here</Heading>
           <Paragraph customClass={"my-3 animate-up"}>
-            I&apos;m a full-stack developer that loves building products and web
-            apps that can impact millions of lives I&apos;m a senior software
-            engineer with 7 years of experience building scalable web apps that
-            are performance optimized and good looking.
+            I&apos;m a passionate web application developer, currently immersed
+            in mastering the MERN stack. My expertise spans JavaScript,
+            React.js, Redux, Tailwind.css, HTML, CSS, Git, GitHub and
+            foundational Express.js and REST APIs.
           </Paragraph>
         </div>
         <div className="basis-1/4 flex items-end justify-end px-2">
@@ -32,9 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Title customClass={"mt-14 mb-4 animate_up"}>
-        What I&apos;ve been working on
-      </Title>
+      <Title customClass={"mt-14 mb-4 animate_up"}>Pinned Projects</Title>
       <div>
         {projects.map((project, key) => {
           const { title, thumbnail, description, stack } = project;
@@ -49,6 +46,6 @@ export default function Home() {
           );
         })}
       </div>
-    </Layout>
+    </>
   );
 }

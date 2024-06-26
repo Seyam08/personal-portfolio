@@ -6,6 +6,25 @@
   html {
     @apply font-sans;
   }
+  /* width */
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-primary;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-teal-500 rounded-lg;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-teal-700;
+  }
 }
 @layer components {
   .animate-up {
@@ -13,6 +32,18 @@
   }
   .animate-in {
     @apply animate-fade animate-duration-100 animate-ease-in-out;
+  }
+  .icons {
+    @apply cursor-pointer text-primary;
+  }
+  .icons path {
+    transition: fill 0.2s ease;
+  }
+  .icons path {
+    @apply fill-transparent;
+  }
+  .icons:hover path {
+    @apply fill-neutral-700 dark:fill-gray-100;
   }
 
   .text-primary {
@@ -32,5 +63,11 @@
   }
   .border-thin {
     @apply border border-neutral-200 dark:border-gray-800;
+  }
+  .navMenu .active li {
+    @apply text-black dark:text-white bg-gray-200 dark:bg-[#222222];
+  }
+  .mobile-menu .active {
+    @apply bg-gray-200 dark:bg-[#222222];
   }
 }

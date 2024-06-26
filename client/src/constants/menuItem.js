@@ -1,5 +1,5 @@
 
-export const navlinks = [
+export const menuItem = [
   {
     href: "/",
     label: "Home",

@@ -1,11 +1,13 @@
-import Home from "./pages/Home";
 import Header from "./subComponents/Header";
+import Layout from "./subComponents/Layout";
 
-export default function Wrapper() {
+export default function Wrapper({ components: Components }) {
   return (
-    <div className="bg-primary md:pt-5">
+    <div className="bg-primary md:pt-5 min-h-screen">
       <Header />
-      <Home />
+      <Layout>
+        <Components />
+      </Layout>
     </div>
   );
 }

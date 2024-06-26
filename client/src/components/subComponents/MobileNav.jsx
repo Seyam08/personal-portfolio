@@ -1,16 +1,14 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { navlinks } from "../../constants/navLinks";
+import { NavLink } from "react-router-dom";
+import { menuItem } from "../../constants/menuItem";
+import { MenuIcon } from "../../icons/Icons";
 
 export default function MobileNav({ customClass }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={`relative ${customClass}`}>
-      <FontAwesomeIcon
-        icon={faBars}
-        size="xl"
+    <div className={`relative z-50 mobile-menu ${customClass}`}>
+      <MenuIcon
         onClick={() => setOpen((prevState) => !prevState)}
         className="cursor-pointer text-primary"
       />
@@ -20,16 +18,16 @@ export default function MobileNav({ customClass }) {
         }`}
       >
         <div className="grid">
-          {navlinks.map((item, key) => {
+          {menuItem.map((item, key) => {
             const { href, label } = item;
             return (
-              <a
-                className="rounded-md px-4 py-2 transition-colors hover:text-primary hover:bg-gray-200 dark:hover:bg-black font-normal text-secondary"
-                href={href}
+              <NavLink
+                className="rounded-md px-4 py-2 transition-colors font-normal  text-secondary hover:text-primary hover:bg-[#efefef] dark:hover:bg-black"
+                to={href}
                 key={key}
               >
                 {label}
-              </a>
+              </NavLink>
             );
           })}
         </div>
