@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       {/* Impression  */}
-      <div className="flex flex-row">
-        <div className="max-w-xl basis-3/4">
+      <div className="flex flex-col-reverse md:flex-row">
+        <div className="max-w-xl md:basis-3/4">
           <Emoji customClass={"animate-up"}>👋</Emoji>
           <Heading customClass={"animate-up"}>Hello! Seyam here</Heading>
           <Paragraph customClass={"my-3 animate-up"}>
@@ -22,7 +22,7 @@ export default function Home() {
             foundational Express.js and REST APIs.
           </Paragraph>
         </div>
-        <div className="basis-1/4 flex items-end justify-end px-2">
+        <div className="md:basis-1/4 flex justify-center md:items-end md:justify-end px-2">
           <div className="w-40 h-40">
             <img
               className="p-1 rounded-full ring-4 ring-teal-400"
