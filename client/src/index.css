@@ -50,10 +50,10 @@
     @apply text-neutral-700 dark:text-gray-100;
   }
   .text-secondary {
-    @apply text-neutral-600 dark:text-gray-300;
+    @apply text-neutral-600 dark:text-[#b4b4b4];
   }
   .text-tertiary {
-    @apply text-neutral-500 dark:text-[#b4b4b4];
+    @apply text-neutral-500 dark:text-neutral-300;
   }
   .bg-primary {
     @apply bg-white dark:bg-[#111111];
@@ -61,13 +61,16 @@
   .bg-secondary {
     @apply bg-gray-100 dark:bg-[#191919];
   }
+  .bg-tertiary {
+    @apply bg-gray-200 dark:bg-[#222222];
+  }
   .border-thin {
     @apply border border-neutral-200 dark:border-gray-800;
   }
   .navMenu .active li {
-    @apply text-black dark:text-white bg-gray-200 dark:bg-[#222222];
+    @apply text-black dark:text-white bg-tertiary;
   }
   .mobile-menu .active {
-    @apply bg-gray-200 dark:bg-[#222222];
+    @apply bg-gray-200 dark:bg-black;
   }
 }

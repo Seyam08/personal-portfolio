@@ -13,7 +13,7 @@ export const menuItem = [
     label: "Projects",
   },
   {
-    href: "/blog",
-    label: "Articles",
+    href: "/contact",
+    label: "Contact",
   }
 ];

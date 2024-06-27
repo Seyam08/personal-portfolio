@@ -1,134 +1,21 @@
 export const projects = [
   {
-    href: "https://aceternity.com",
-    title: "Aceternity",
-    description:
-      "A design and development studio that focuses on building quality apps.",
-    thumbnail: "https://sidefolio.vercel.app/_next/image?url=%2Fimages%2Fsidefolio-aceternity.png&w=256&q=75",
-    images: [
-      "/images/sidefolio-aceternity.png",
-      "/images/sidefolio-aceternity-2.png",
-    ],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "aceternity",
-    // content: (
-    //   <div>
-    //     <p>
-    //       Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-    //       dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-    //       cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-    //       cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-    //       non cupidatat duis esse velit ut culpa et.{" "}
-    //     </p>
-    //     <p>
-    //       Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-    //       Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-    //       sit aute fugiat incididunt nostrud consequat proident fugiat id.
-    //       Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-    //       reprehenderit. Cillum Lorem veniam eu magna exercitation.
-    //       Reprehenderit adipisicing minim et officia enim et veniam Lorem
-    //       excepteur velit adipisicing et Lorem magna.
-    //     </p>{" "}
-    //   </div>
-    // ),
+    preview: "https://parkreserve.netlify.app/",
+    title: "Parking Reserve App",
+    description: "A web application for reserving parking spots. It has several features, including vehicle type selection, spot choosing, and detailed information about the owner. Based on this information, the app generates a token that serves as the identifier for the booking. The app also includes a token removal option for discharging vehicles.",
+    thumbnail: "https://raw.githubusercontent.com/Seyam08/parking-app/main/park-reserve.PNG",
+    stack: ["React", "Redux", "Tailwind CSS"],
+    slug: "parkreserve",
+    repo: "https://github.com/Seyam08/parking-app"
   },
   {
-    href: "https://algochurn.com",
-    title: "Algochurn",
-    description:
-      "Practice for technical interviews with hands on coding challenges.Practice for technical interviews with hands on coding challenges.",
-    thumbnail: "https://sidefolio.vercel.app/_next/image?url=%2Fimages%2Fsidefolio-algochurn.png&w=256&q=75",
-    images: [
-      "/images/sidefolio-algochurn.png",
-      "/images/sidefolio-algochurn-2.png",
-    ],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "algochurn",
-    // content: (
-    //   <div>
-    //     <p>
-    //       Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-    //       dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-    //       cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-    //       cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-    //       non cupidatat duis esse velit ut culpa et.{" "}
-    //     </p>
-    //     <p>
-    //       Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-    //       Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-    //       sit aute fugiat incididunt nostrud consequat proident fugiat id.
-    //       Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-    //       reprehenderit. Cillum Lorem veniam eu magna exercitation.
-    //       Reprehenderit adipisicing minim et officia enim et veniam Lorem
-    //       excepteur velit adipisicing et Lorem magna.
-    //     </p>{" "}
-    //   </div>
-    // ),
+    preview: "https://daily-routine08.netlify.app/",
+    title: "Daily Routine App",
+    description: "A Daily Routine App built with React. This app allows users to track their tasks, with features such as editing, and deleting tasks. Also, users can select task durations and mark tasks as completed.",
+    thumbnail: "https://raw.githubusercontent.com/Seyam08/Daily-Routine-App/main/daily-routine.PNG",
+    stack: ["React", "Fontawesome", "Tailwind CSS"],
+    slug: "daily-routine-app",
+    repo: "https://github.com/Seyam08/Daily-Routine-App"
   },
-  {
-    href: "https://gomoonbeam.com",
-    title: "Moonbeam",
-    description:
-      "Never write from scratch again with Moonbeam, your AI first writing tool",
-    thumbnail: "https://sidefolio.vercel.app/_next/image?url=%2Fimages%2Fsidefolio-moonbeam.png&w=256&q=75",
-    images: [
-      "/images/sidefolio-moonbeam.png",
-      "/images/sidefolio-moonbeam-2.png",
-    ],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "moonbeam",
-    // content: (
-    //   <div>
-    //     <p>
-    //       Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-    //       dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-    //       cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-    //       cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-    //       non cupidatat duis esse velit ut culpa et.{" "}
-    //     </p>
-    //     <p>
-    //       Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-    //       Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-    //       sit aute fugiat incididunt nostrud consequat proident fugiat id.
-    //       Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-    //       reprehenderit. Cillum Lorem veniam eu magna exercitation.
-    //       Reprehenderit adipisicing minim et officia enim et veniam Lorem
-    //       excepteur velit adipisicing et Lorem magna.
-    //     </p>{" "}
-    //   </div>
-    // ),
-  },
-  {
-    href: "https://tailwindmasterkit.com",
-    title: "Tailwind Master Kit",
-    description:
-      "A beautiful and comprehensive Tailwind CSS components library for building modern websites and applications.",
-    thumbnail: "https://sidefolio.vercel.app/_next/image?url=%2Fimages%2Fsidefolio-tailwindmasterkit.png&w=256&q=75",
-    images: [
-      "/images/sidefolio-tailwindmasterkit.png",
-      "/images/sidefolio-tailwindmasterkit-2.png",
-    ],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "tailwindmasterkit",
-    // content: (
-    //   <div>
-    //     <p>
-    //       Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-    //       dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-    //       cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-    //       cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-    //       non cupidatat duis esse velit ut culpa et.{" "}
-    //     </p>
-    //     <p>
-    //       Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-    //       Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-    //       sit aute fugiat incididunt nostrud consequat proident fugiat id.
-    //       Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-    //       reprehenderit. Cillum Lorem veniam eu magna exercitation.
-    //       Reprehenderit adipisicing minim et officia enim et veniam Lorem
-    //       excepteur velit adipisicing et Lorem magna.
-    //     </p>{" "}
-    //   </div>
-    // ),
-  },
+  
 ];

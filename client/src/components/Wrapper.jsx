@@ -1,3 +1,4 @@
+import Footer from "./subComponents/Footer";
 import Header from "./subComponents/Header";
 import Layout from "./subComponents/Layout";
 
@@ -8,6 +9,7 @@ export default function Wrapper({ components: Components }) {
       <Layout>
         <Components />
       </Layout>
+      <Footer />
     </div>
   );
 }
