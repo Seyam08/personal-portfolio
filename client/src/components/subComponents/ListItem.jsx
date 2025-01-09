@@ -10,7 +10,7 @@ export default function ListItem({
   link,
 }) {
   return (
-    <div className="flex flex-col bg-secondary md:flex-row my-8 border-thin rounded-lg animate-up">
+    <div className="flex flex-col bg-secondary md:flex-row my-8 border-thin rounded-lg animate-up space-x-0 md:space-x-5 px-2">
       <div className="md:basis-2/6 flex items-center">
         <img className="rounded-md" src={thumbnail} alt={title} />
       </div>
