@@ -56,13 +56,13 @@
     @apply text-neutral-500 dark:text-neutral-300;
   }
   .bg-primary {
-    @apply bg-white dark:bg-[#111111];
+    @apply bg-[#fdfdfd] dark:bg-[#060606];
   }
   .bg-secondary {
-    @apply bg-gray-100 dark:bg-[#191919];
+    @apply bg-[#F0F0F0] dark:bg-[#020d19];
   }
   .bg-tertiary {
-    @apply bg-gray-200 dark:bg-[#222222];
+    @apply bg-[#e2f2ff] dark:bg-[#101720];
   }
   .border-thin {
     @apply border border-neutral-200 dark:border-gray-800;
