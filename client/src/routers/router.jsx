@@ -9,22 +9,28 @@ import Projects from "../components/pages/Projects";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Wrapper components={Home} />,
-  },
-  {
-    path: "/about",
-    element: <Wrapper components={About} />,
-  },
-  {
-    path: "/projects",
-    element: <Wrapper components={Projects} />,
-  },
-  {
-    path: "/contact",
-    element: <Wrapper components={Contact} />,
-  },
-  {
-    path: "*",
-    element: <Wrapper components={PageNotFound} />,
+    element: <Wrapper />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "*",
+        element: <PageNotFound />,
+      },
+    ],
   },
 ]);
