@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       {/* Impression  */}
-      <div className="flex flex-col-reverse md:flex-row">
-        <div className="max-w-xl md:basis-3/4">
+      <div className="w-full flex flex-col-reverse md:flex-row md:justify-between">
+        <div className="max-w-xl 2xl:max-w-3xl md:basis-3/4">
           <Emoji customClass={"animate-up"}>👋</Emoji>
           <Heading customClass={"animate-up"}>Hello! Seyam here</Heading>
           <Paragraph customClass={"my-3 animate-up"}>

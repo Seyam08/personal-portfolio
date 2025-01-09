@@ -35,9 +35,9 @@ export default function Header() {
   };
 
   return (
-    <nav className="flex items-center justify-between gap-3 max-w-4xl w-full mx-auto px-4 py-3 md:px-6">
+    <nav className="flex items-center justify-between gap-3 max-w-4xl 2xl:max-w-6xl w-full mx-auto px-4 py-3 md:px-6">
       <div>
-        <div className="h-10 w-10">
+        <div className="h-10 w-10 2xl:h-14 2xl:w-14">
           <Link to={"/"}>
             <img src={theme === "dark" ? logoWhite : logoBlack} alt="logo" />
           </Link>
@@ -48,11 +48,14 @@ export default function Header() {
         {menuItem.map((item, key) => {
           const { href, label } = item;
           return (
-            <NavLink key={key} to={href}>
-              <li className="text-secondary font-semibold px-3 py-2 hover:text-black dark:hover:text-white transition-colors rounded-xl">
+            <li key={key}>
+              <NavLink
+                to={href}
+                className="block px-3 py-2 text-secondary font-semibold hover:text-black dark:hover:text-white transition-colors rounded-xl text-base 2xl:text-lg"
+              >
                 {label}
-              </li>
-            </NavLink>
+              </NavLink>
+            </li>
           );
         })}
       </ul>

@@ -34,7 +34,7 @@
     @apply animate-fade animate-duration-100 animate-ease-in-out;
   }
   .icons {
-    @apply cursor-pointer text-primary;
+    @apply cursor-pointer text-primary h-6 w-6 2xl:h-7 2xl:w-7;
   }
   .icons path {
     transition: fill 0.2s ease;
@@ -56,18 +56,18 @@
     @apply text-neutral-500 dark:text-neutral-300;
   }
   .bg-primary {
-    @apply bg-[#fdfdfd] dark:bg-[#060606];
+    @apply bg-white dark:bg-black;
   }
   .bg-secondary {
-    @apply bg-[#F0F0F0] dark:bg-[#020d19];
+    @apply bg-slate-200 dark:bg-[#060606];
   }
   .bg-tertiary {
     @apply bg-[#e2f2ff] dark:bg-[#101720];
   }
   .border-thin {
-    @apply border border-neutral-200 dark:border-gray-800;
+    @apply border border-slate-300 dark:border-gray-800;
   }
-  .navMenu .active li {
+  .navMenu li .active {
     @apply text-black dark:text-white bg-tertiary;
   }
   .mobile-menu .active {
