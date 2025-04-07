@@ -16,7 +16,6 @@ export default function Project() {
     <div className="space-y-8">
       <Heading>{project.title}</Heading>
       <Paragraph>{project.description}</Paragraph>
-
       {/* Project Stacks */}
       <div className="flex flex-col gap-4 mt-14 md:flex-row md:gap-9">
         <Title customClass={"md:basis-2/12"}>Stack</Title>
@@ -38,12 +37,19 @@ export default function Project() {
           })}
         </div>
       </div>
-
       {/* Live preview */}
       <div className="flex flex-col items-center gap-4 mt-14 md:flex-row md:gap-9">
         <Title customClass={"md:basis-2/12"}>Live preview</Title>
         <div className="flex flex-row items-center flex-wrap gap-5 md:basis-10/12">
-          <Link to={project.preview} target="_blank">
+          <CodeBlock>{project.preview}</CodeBlock>
+        </div>
+      </div>
+
+      {/* Live preview */}
+      <div className="flex flex-col items-center gap-4 mt-14 md:flex-row md:gap-9">
+        <Title customClass={"md:basis-2/12"}>Repo</Title>
+        <div className="flex flex-row items-center flex-wrap gap-5 md:basis-10/12">
+          <Link to={project.repo} target="_blank">
             <img
               align="center"
               src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
@@ -51,11 +57,8 @@ export default function Project() {
               className="rounded-md hover:scale-105 duration-100"
             />
           </Link>
-          <span className="text-base text-tertiary"> or</span>
-          <CodeBlock>{project.preview}</CodeBlock>
         </div>
       </div>
-
       <div className="prose md:prose-sm xl:prose-lg dark:prose-invert">
         {project.content}
       </div>
