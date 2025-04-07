@@ -10,7 +10,7 @@ export default function Projects() {
       </Heading>
       <div>
         {projects.map((project, key) => {
-          const { title, thumbnail, description, stack, repo } = project;
+          const { title, thumbnail, description, stack, slug } = project;
           return (
             <ListItem
               key={key}
@@ -18,7 +18,7 @@ export default function Projects() {
               thumbnail={thumbnail}
               description={description}
               tags={stack}
-              link={repo}
+              link={`/${slug}`}
             />
           );
         })}

@@ -42,7 +42,7 @@ export default function Home() {
       <Title customClass={"mt-14 mb-4 animate-up"}>Pinned Projects</Title>
       <div>
         {projects.map((project, key) => {
-          const { title, thumbnail, description, stack, repo } = project;
+          const { title, thumbnail, description, stack, slug } = project;
           return (
             <ListItem
               key={key}
@@ -50,7 +50,7 @@ export default function Home() {
               thumbnail={thumbnail}
               description={description}
               tags={stack}
-              link={repo}
+              link={`/${slug}`}
             />
           );
         })}

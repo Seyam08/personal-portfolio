@@ -19,10 +19,8 @@ export default function Project() {
 
       {/* Project Stacks */}
       <div className="flex flex-col gap-4 mt-14 md:flex-row md:gap-9">
-        <Title customClass={"animate-up md:basis-2/12"}>Stack</Title>
-        <div
-          className={`flex flex-row flex-wrap gap-1.5 animate-up md:basis-10/12`}
-        >
+        <Title customClass={"md:basis-2/12"}>Stack</Title>
+        <div className={`flex flex-row flex-wrap gap-1.5 md:basis-10/12`}>
           {project.stack.map((projectStack, key) => {
             const matchedStack = techStacks.find(
               ({ stack }) => stack === projectStack
@@ -43,8 +41,8 @@ export default function Project() {
 
       {/* Live preview */}
       <div className="flex flex-col items-center gap-4 mt-14 md:flex-row md:gap-9">
-        <Title customClass={"animate-up md:basis-2/12"}>Live preview</Title>
-        <div className="flex flex-row items-center flex-wrap gap-5 animate-up md:basis-10/12">
+        <Title customClass={"md:basis-2/12"}>Live preview</Title>
+        <div className="flex flex-row items-center flex-wrap gap-5 md:basis-10/12">
           <Link to={project.preview} target="_blank">
             <img
               align="center"
