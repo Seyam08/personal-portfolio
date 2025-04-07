@@ -4,6 +4,7 @@ import About from "../components/pages/About";
 import Contact from "../components/pages/Contact";
 import Home from "../components/pages/Home";
 import PageNotFound from "../components/pages/PageNotFound";
+import Project from "../components/pages/Project";
 import Projects from "../components/pages/Projects";
 
 export const router = createBrowserRouter([
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/:slug",
+        element: <Project />,
       },
       {
         path: "*",
