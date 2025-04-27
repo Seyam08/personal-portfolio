@@ -38,7 +38,7 @@ export default function Project() {
         </div>
       </div>
       {/* Live preview */}
-      <div className="flex flex-col items-center gap-4 mt-14 md:flex-row md:gap-9">
+      <div className="flex flex-col gap-4 mt-14 md:flex-row md:gap-9">
         <Title customClass={"md:basis-2/12"}>Live preview</Title>
         <div className="flex flex-row items-center flex-wrap gap-5 md:basis-10/12">
           <CodeBlock>{project.preview}</CodeBlock>
@@ -46,7 +46,7 @@ export default function Project() {
       </div>
 
       {/* Live preview */}
-      <div className="flex flex-col items-center gap-4 mt-14 md:flex-row md:gap-9">
+      <div className="flex flex-col gap-4 mt-14 md:flex-row md:gap-9">
         <Title customClass={"md:basis-2/12"}>Repo</Title>
         <div className="flex flex-row items-center flex-wrap gap-5 md:basis-10/12">
           <Link to={project.repo} target="_blank">

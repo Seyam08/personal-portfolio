@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import CodeBlock from "../components/subComponents/CodeBlock";
+import Heading from "../components/subComponents/Heading";
 import Title from "../components/subComponents/Title";
 
 export const projects = [
@@ -224,6 +226,117 @@ export const projects = [
           <li>Predictable state management with Redux</li>
           <li>Practiced React</li>
           <li>Practiced designing with Tailwind.css</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    preview: "https://ezy-event.netlify.app/",
+    title: "ezyEvent - Event Management System",
+    description:
+      "ezyEvent is a full-stack event platform with a React.js/Vite frontend and Node.js/Express backend. The frontend uses RTK Query for API calls and JWT authentication, organized by features for scalability. The backend offers a RESTful API with MongoDB, handling CRUD operations for events/users with secure JWT/bcrypt auth. Following monorepo architecture, it cleanly separates client and server code while enabling seamless communication via REST standards.",
+    thumbnail:
+      "https://raw.githubusercontent.com/Seyam08/ezyEvent/refs/heads/main/dashboard.png",
+    stack: ["React", "Redux", "Tailwind CSS", "Express.js", "MongoDB", "Git"],
+    slug: "ezy-event",
+    repo: "https://github.com/Seyam08/ezyEvent",
+    content: (
+      <>
+        <Title>🚀 How It Works</Title>
+
+        <Title>Frontend (Client)</Title>
+
+        <ul>
+          <li>
+            Built with <strong>React.js + Vite</strong>
+          </li>
+          <li>
+            Uses <strong>RTK Query</strong> for API communication
+          </li>
+          <li>Protected routes with JWT authentication</li>
+          <li>Feature-based architecture</li>
+        </ul>
+
+        <Title>Backend (Server)</Title>
+
+        <ul>
+          <li>
+            RESTful API with <strong>Node.js/Express</strong>
+          </li>
+          <li>MongoDB database</li>
+          <li>JWT authentication</li>
+          <li>CRUD operations for events/users</li>
+        </ul>
+
+        <Title>🔌 API Connection</Title>
+
+        <p>The frontend communicates with backend via:</p>
+
+        <ul>
+          <li>All requests require valid JWT (except login/register)</li>
+          <li>Standard REST conventions (GET/POST/PUT/DELETE)</li>
+        </ul>
+
+        <Title>📚 Documentation</Title>
+
+        <ul>
+          <li>
+            <Link
+              to={"https://github.com/Seyam08/ezyEvent/tree/main/client"}
+              target="_blank"
+            >
+              📖 Frontend Details
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"https://github.com/Seyam08/ezyEvent/tree/main/server"}
+              target="_blank"
+            >
+              🔌 API Endpoints
+            </Link>
+          </li>
+        </ul>
+
+        <Title>Key features of this README:</Title>
+
+        <ol>
+          <li>Visualizes the monorepo structure</li>
+          <li>Clearly separates frontend/backend concerns</li>
+          <li>Shows how they connect</li>
+          <li>Provides minimal but complete setup instructions</li>
+          <li>Links to detailed docs for each part</li>
+          <li>Maintains clean formatting</li>
+        </ol>
+
+        <Heading>Lesson learned</Heading>
+
+        <Title>RTK Query Mastery</Title>
+        <ul>
+          <li>API endpoint declaration (createApi)</li>
+          <li>Structured code organization (injectEndpoints)</li>
+          <li>Automatic caching/revalidation</li>
+          <li>Optimistic updates</li>
+          <li>Custom query hooks generation</li>
+        </ul>
+
+        <Title>Backend API Skills</Title>
+        <ul>
+          <li>RESTful endpoint design</li>
+          <li>File uploads with Multer</li>
+          <li>JWT authentication flow</li>
+          <li>Session-based auth alternatives</li>
+          <li>CORS configuration</li>
+          <li>CRUD operation implementation</li>
+        </ul>
+
+        <Title>Key Takeaways</Title>
+        <ul>
+          <li>RTK Query eliminates manual caching logic</li>
+          <li>Endpoint structure improves maintainability</li>
+          <li>JWT provides stateless auth</li>
+          <li>Multer handles file processing</li>
+          <li>CORS secures cross-origin requests</li>
         </ul>
       </>
     ),
