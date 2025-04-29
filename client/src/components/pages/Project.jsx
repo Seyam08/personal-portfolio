@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { projects } from "../../constants/project";
 import { techStacks } from "../../constants/techStacks";
+import { ArrowUpRightIcon } from "../../icons/Icons";
 import CodeBlock from "../subComponents/CodeBlock";
 import Heading from "../subComponents/Heading";
 import Paragraph from "../subComponents/Paragraph";
@@ -42,6 +43,21 @@ export default function Project() {
         <Title customClass={"md:basis-2/12"}>Live preview</Title>
         <div className="flex flex-row items-center flex-wrap gap-5 md:basis-10/12">
           <CodeBlock>{project.preview}</CodeBlock>
+          <span className="text-secondary">or</span>
+          <Link
+            target={"_blank"}
+            to={project.preview}
+            className="group bg-tertiary py-2 px-4 rounded-lg transition hover:bg-primary border border-transparent hover:border-thin text-primary"
+          >
+            <div className="flex items-center gap-3">
+              Preview
+              <ArrowUpRightIcon
+                className={
+                  "text-primary h-5 w-5 ml-auto group-hover:rotate-45 transition-transform duration-200"
+                }
+              />
+            </div>
+          </Link>
         </div>
       </div>
 
