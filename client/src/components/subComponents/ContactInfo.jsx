@@ -17,12 +17,16 @@ export default function ContactInfo({ customClass }) {
             <Link
               target={"_blank"}
               to={link}
-              className="bg-tertiary inline-grid w-full p-4 rounded-lg  transition hover:bg-primary text-primary"
+              className="group bg-tertiary inline-grid w-full p-4 rounded-lg  transition hover:bg-primary text-primary"
             >
               <div className="flex items-center gap-3">
                 <Icon className={"text-primary h-5 w-5"} />
                 {label}
-                <ArrowUpRightIcon className={"text-primary h-5 w-5 ml-auto"} />
+                <ArrowUpRightIcon
+                  className={
+                    "text-primary h-5 w-5 ml-auto group-hover:rotate-45 transition-transform duration-200"
+                  }
+                />
               </div>
             </Link>
           </li>
