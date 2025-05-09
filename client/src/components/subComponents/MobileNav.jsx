@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { menuItem } from "../../constants/menuItem";
+import useClickOutside from "../../hooks/useClickOutside";
 import { MenuIcon } from "../../icons/Icons";
 
 export default function MobileNav({ customClass }) {
   const [open, setOpen] = useState(false);
+  const ref = useClickOutside(() => setOpen(false));
 
   return (
-    <div className={`relative z-50 mobile-menu ${customClass}`}>
+    <div className={`relative z-50 mobile-menu ${customClass}`} ref={ref}>
       <MenuIcon
         onClick={() => setOpen((prevState) => !prevState)}
         className="cursor-pointer text-primary"
