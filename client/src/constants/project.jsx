@@ -366,19 +366,34 @@ export const projects = [
       <>
         <Title>Features</Title>
         <ul>
-          <li>Vehicle type select option.</li>
-          <li>Parking sopt choosing option.</li>
-          <li>Details information about reserver</li>
           <li>
-            A token will be generated when the user clicks the &apos;Get
-            Token&apos; button
+            Add tasks: Users can input new tasks and specify start and end times
+            before adding them to the list.
           </li>
           <li>
-            Token list will be available on the left side of panel, also token
-            can be removed.
+            Edit tasks: Simply click the edit icon next to a task to modify its
+            title.
           </li>
-          <li>Already booked spot marked.</li>
-          <li>Token details will shown in a popup screen</li>
+          <li>
+            Delete tasks: Users can remove unwanted tasks by clicking the delete
+            icon next to them.
+          </li>
+          <li>
+            Mark tasks as completed: Check the checkbox next to a task to
+            indicate it's been completed.
+          </li>
+          <li>
+            Complete all tasks: Use the master checkbox to mark all tasks as
+            completed at once.
+          </li>
+          <li>
+            Task count: The total number of tasks is displayed for easy
+            reference.
+          </li>
+          <li>
+            Duration: It shows the duration of a task based on start and end
+            time.
+          </li>
         </ul>
         <Title>Installation</Title>
         <p>Install this app with npm</p>
@@ -387,14 +402,14 @@ export const projects = [
             <p>Clone the repository:</p>
             <p>
               <CodeBlock>
-                git clone https://github.com/Seyam08/parking-app.git
+                git clone https://github.com/Seyam08/Daily-Routine-App.git
               </CodeBlock>
             </p>
           </li>
           <li>
             <p>Navigate to the project directory:</p>
             <p>
-              <CodeBlock>cd parking-app</CodeBlock>
+              <CodeBlock>cd Daily-Routine-App</CodeBlock>
             </p>
           </li>
           <li>
@@ -409,6 +424,10 @@ export const projects = [
             <p>
               <CodeBlock>npm run dev</CodeBlock>
             </p>
+            <p>
+              Open your web browser and visit http://localhost:5173 to see the
+              application.
+            </p>
           </li>
           <li>
             <p>Open the package.json file to see all the scripts.</p>
@@ -417,7 +436,7 @@ export const projects = [
         <Title>Deployment</Title>
         <p>To deploy this project run</p>
         <p>
-          <CodeBlock>bash npm run build </CodeBlock>
+          <CodeBlock>npm run build</CodeBlock>
         </p>
         <Title>Acknowledgements</Title>
         <ul>
@@ -429,25 +448,20 @@ export const projects = [
             for building the user interface.
           </li>
           <li>
-            <a href="https://redux.js.org/">Redux</a> A JS library for
-            predictable and maintainable global state management
-          </li>
-          <li>
             <a href="https://tailwindcss.com/">Tailwind CSS</a> A utility-first
             CSS framework
           </li>
           <li>
-            <a href="https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md">
-              @vitejs/plugin-react
-            </a>
-            uses <a href="https://babeljs.io/">Babel</a> for Fast Refresh
+            <a href="https://fontawesome.com/">Fontawesome</a> The icon library
+            used for icons.
           </li>
+          <li>Some other tools that used on this project - Vite, eslint.</li>
         </ul>
         <Title>Screenshots</Title>
         <p>
           <img
             alt="App Screenshot"
-            src="https://raw.githubusercontent.com/Seyam08/parking-app/main/park-reserve.PNG"
+            src="https://raw.githubusercontent.com/Seyam08/Daily-Routine-App/main/daily-routine.PNG"
           />
         </p>
         <Title>Authors</Title>
@@ -455,12 +469,6 @@ export const projects = [
           <li>
             <a href="https://www.github.com/Seyam08">Seyam Hossain</a>
           </li>
-        </ul>
-        <Title>Lessons Learned</Title>
-        <ul>
-          <li>Predictable state management with Redux</li>
-          <li>Practiced React</li>
-          <li>Practiced designing with Tailwind.css</li>
         </ul>
       </>
     ),
