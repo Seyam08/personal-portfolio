@@ -18,8 +18,8 @@ export default function Home() {
           <Paragraph customClass={"my-3 animate-up"}>
             I&apos;m a passionate web application developer, currently immersed
             in mastering the MERN stack. My expertise spans JavaScript,
-            React.js, Redux, Tailwind.css, HTML, CSS, Git, GitHub and
-            foundational Express.js and REST APIs.
+            React.js, Redux, TypeScript, Tailwind.css, HTML, CSS, Git, GitHub
+            and foundational Express.js and REST APIs.
           </Paragraph>
         </div>
         <div className="md:basis-1/4 flex justify-center md:items-end md:justify-end px-2">

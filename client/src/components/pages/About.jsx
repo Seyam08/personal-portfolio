@@ -19,16 +19,18 @@ export default function About() {
             Dhaka, Bangladesh. Currently immersed in mastering the MERN stack.
             While my academic roots are in BBA, my true passion lies in coding
             and development. My expertise spans JavaScript, React.js, Redux,
-            Tailwind.css, HTML, CSS, Git, GitHub and foundational Express.js and
-            REST APIs.
+            TypeScript, Tailwind.css, HTML, CSS, Git, GitHub and foundational
+            Express.js and REST APIs.
           </Paragraph>
           <Paragraph customClass={"mb-3"}>
             📚 Learning is a never-ending journey for me. I may have a bit of
             WordPress experience under my belt, but my passion lies in exploring
             the limitless possibilities of web development. I&apos;m motivated
-            to learn more about Typescript, OOP, DSA, backend technologies, and
-            front-end technologies. I am also eager to expand my knowledge by
-            learning a full-stack framework like Next.js.
+            to learn more about frontend, backend, and DevOps technologies. I'm
+            interested in learning more about the Software Development Life
+            Cycle (SDLC) and different methodologies like Agile. I want to
+            understand how teams use these processes to plan, build, and deliver
+            software effectively.
           </Paragraph>
           <Paragraph customClass={"mb-3"}>
             💬 Being a continuous learner and an avid explorer of the web
