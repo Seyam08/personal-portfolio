@@ -116,6 +116,156 @@ export const projects = [
     ),
   },
   {
+    preview: "https://sketch-flow-view.netlify.app/",
+    title: "Sketch Flow",
+    description:
+      "A prototype project inspired by diagramming and flowchart tools. This is the first version built to experiment with shape drawing and canvas interactions. It’s still in the early stages, but it lays the foundation for a more advanced flowcharting tool. Future updates will introduce arrows, text inside shapes, styling options, and import/export functionality.",
+    thumbnail:
+      "https://raw.githubusercontent.com/Seyam08/sketch-flow/refs/heads/main/screenshot.PNG",
+    stack: ["React", "TypeScript", "Tailwind CSS", "Shadcn", "Vite", "Zustand"],
+    slug: "sketch-flow",
+    repo: "https://github.com/Seyam08/sketch-flow",
+    content: (
+      <>
+        <Title>🌟 Current Features (Prototype)</Title>
+        <ul>
+          <li>
+            🖌️ <strong>Draw Shapes</strong> – Create basic shapes on the canvas:
+            <ul>
+              <li>Rectangle</li>
+              <li>Circle</li>
+              <li>Square</li>
+              <li>Diamond</li>
+            </ul>
+          </li>
+          <li>
+            🔄 <strong>Move Shapes</strong> – Drag and reposition shapes
+            anywhere on the canvas.
+          </li>
+          <li>
+            🧹 <strong>Clear All</strong> – Reset the canvas with a single
+            action.
+          </li>
+        </ul>
+
+        <Title>🚀 Planned Features</Title>
+        <p>
+          This is only the <strong>prototype version</strong>. Upcoming
+          improvements include:
+        </p>
+
+        <ul>
+          <li>
+            ➡️ <strong>Arrows</strong> – Connect shapes with directional arrows
+          </li>
+          <li>
+            🔗 <strong>Join Shapes</strong> – Build flowcharts by linking shapes
+            together
+          </li>
+          <li>
+            ✍️ <strong>Text Inside Shapes</strong> – Add labels or descriptions
+            inside each shape
+          </li>
+          <li>
+            🎨 <strong>Customization</strong> – Change shape color, border
+            stroke, and canvas background
+          </li>
+          <li>
+            📤📥 <strong>Export & Import</strong> – Save and load your diagrams
+          </li>
+        </ul>
+
+        <Title>🛠️ Tech Stack</Title>
+        <ul>
+          <li>
+            ⚛️ <strong>React (with TypeScript)</strong> – For building
+            interactive UI
+          </li>
+          <li>
+            🎨 <strong>Shadcn/UI</strong> – For modern, accessible components
+          </li>
+          <li>
+            🗂️ <strong>Zustand</strong> – For state management
+          </li>
+          <li>
+            ⚡ <strong>Vite</strong> – For fast bundling and development
+          </li>
+        </ul>
+
+        <Title>Installation</Title>
+        <p>Install this app with npm</p>
+        <ol>
+          <li>
+            <p>Clone the repository:</p>
+            <p>
+              <CodeBlock>
+                git clone https://github.com/Seyam08/sketch-flow.git
+              </CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Navigate to the project directory:</p>
+            <p>
+              <CodeBlock>cd sketch-flow</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Install the dependencies:</p>
+            <p>
+              <CodeBlock>npm install</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Start the application (development):</p>
+            <p>
+              <CodeBlock>npm run dev</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Build command:</p>
+            <p>
+              <CodeBlock>npm run build</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Preview build:</p>
+            <p>
+              <CodeBlock>npm run preview</CodeBlock>
+            </p>
+          </li>
+        </ol>
+
+        <Title>Screenshots</Title>
+        <p>
+          <img
+            alt="App Screenshot"
+            src="https://raw.githubusercontent.com/Seyam08/sketch-flow/refs/heads/main/screenshot.PNG"
+          />
+        </p>
+
+        <Title>Authors</Title>
+        <ul>
+          <li>
+            <a href="https://www.github.com/Seyam08">Seyam Hossain</a>
+          </li>
+        </ul>
+
+        <Title>Lessons Learned</Title>
+        <ul>
+          <li>Managing complex canvas interactions with React state</li>
+          <li>Practiced TypeScript for type safety in UI logic</li>
+          <li>Using Zustand for tracking shapes</li>
+          <li>Implemented Shadcn libraries components for reusable UI</li>
+          <li>Improved UI/UX design skills with TailwindCSS</li>
+          <li>
+            Learned to build canvas logic fully from scratch without external
+            libraries
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     preview: "https://pill-splitter-peach.vercel.app/",
     title: "Pill Splitter",
     description:
