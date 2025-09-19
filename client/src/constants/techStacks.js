@@ -69,4 +69,19 @@ export const techStacks = [
     iconUrl:
       "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
   },
+  {
+    stack: "Shadcn",
+    iconUrl:
+      "https://img.shields.io/badge/Shadcn-000000?style=for-the-badge&logo=radix-ui&logoColor=white",
+  },
+  {
+    stack: "Vite",
+    iconUrl:
+      "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white",
+  },
+  {
+    stack: "Zustand",
+    iconUrl:
+      "https://img.shields.io/badge/Zustand-443e38?style=for-the-badge&logo=react&logoColor=white",
+  },
 ];
