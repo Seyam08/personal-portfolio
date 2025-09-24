@@ -266,6 +266,162 @@ export const projects = [
     ),
   },
   {
+    preview: "https://talent-seek.netlify.app/",
+    title: "Multi-Step Form",
+    description:
+      "A multi-step form built with React, TypeScript, Shadcn UI, Tailwind CSS, and React Hook Form with Zod resolver. It supports conditional validations, progress tracking, and state persistence across steps. Designed to simulate real-world job application scenarios with multiple dependencies between inputs.",
+    thumbnail:
+      "https://raw.githubusercontent.com/Seyam08/react-multi-step-form/refs/heads/main/Screenshot.PNG",
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn",
+      "React Hook Form",
+      "Zod",
+    ],
+    slug: "multi-step-form",
+    repo: "https://github.com/Seyam08/react-multi-step-form",
+    content: (
+      <>
+        <Title>🌟 Features</Title>
+        <ul>
+          <li>
+            📝 <strong>Step 1: Personal Info</strong>
+            <ul>
+              <li>Name (required)</li>
+              <li>Email (required)</li>
+              <li>Phone with country selector</li>
+              <li>Birth Date (must be past date, not earlier than 1950)</li>
+              <li>Profile Picture (max 2MB, preview & remove option)</li>
+            </ul>
+          </li>
+          <li>
+            💼 <strong>Step 2: Job Details</strong>
+            <ul>
+              <li>Department Select</li>
+              <li>Position Title</li>
+              <li>Start Date (past allowed, future max 90 days)</li>
+              <li>Job Type (Full-time, Part-time, Contract)</li>
+              <li>Manager Select (dynamic by department)</li>
+              <li>Salary Expectation (slider, range depends on job type)</li>
+            </ul>
+          </li>
+          <li>
+            🛠 <strong>Step 3: Skills & Preferences</strong>
+            <ul>
+              <li>Minimum 3 skills required (each unlocks experience field)</li>
+              <li>Preferred Work Time (time range select)</li>
+              <li>
+                Remote Preference (less than 50% requires manager approval)
+              </li>
+              <li>Extra Notes (optional)</li>
+            </ul>
+          </li>
+          <li>
+            📞 <strong>Step 4: Emergency Contact</strong>
+            <ul>
+              <li>Contact Name, Relation, Phone</li>
+              <li>
+                Guardian Info (required if candidate age between 18–21):
+                Guardian Name & Phone
+              </li>
+            </ul>
+          </li>
+          <li>
+            ✅ <strong>Step 5: Review & Submit</strong>
+            <ul>
+              <li>Preview of all inputs</li>
+              <li>Toggle switch confirmation before final submit</li>
+            </ul>
+          </li>
+        </ul>
+
+        <Title>🚀 Form Overview</Title>
+        <ul>
+          <li>Progress bar to track completion</li>
+          <li>State persistence across forward/backward navigation</li>
+        </ul>
+
+        <Title>🛠️ Tech Stack</Title>
+        <ul>
+          <li>⚛️ React (with TypeScript)</li>
+          <li>🎨 Shadcn/UI</li>
+          <li>🎨 Tailwind CSS</li>
+          <li>📋 React Hook Form</li>
+          <li>✅ Zod (for schema validation)</li>
+        </ul>
+
+        <Title>Installation</Title>
+        <p>Install this app with npm</p>
+        <ol>
+          <li>
+            <p>Clone the repository:</p>
+            <p>
+              <CodeBlock>
+                git clone https://github.com/your-username/multi-step-form.git
+              </CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Navigate to the project directory:</p>
+            <p>
+              <CodeBlock>cd multi-step-form</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Install the dependencies:</p>
+            <p>
+              <CodeBlock>npm install</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Start the application (development):</p>
+            <p>
+              <CodeBlock>npm run dev</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Build command:</p>
+            <p>
+              <CodeBlock>npm run build</CodeBlock>
+            </p>
+          </li>
+          <li>
+            <p>Preview build:</p>
+            <p>
+              <CodeBlock>npm run preview</CodeBlock>
+            </p>
+          </li>
+        </ol>
+
+        <Title>Screenshots</Title>
+        <p>
+          <img
+            alt="App Screenshot"
+            src="https://raw.githubusercontent.com/Seyam08/react-multi-step-form/refs/heads/main/Screenshot.PNG"
+          />
+        </p>
+
+        <Title>Authors</Title>
+        <ul>
+          <li>
+            <a href="https://github.com/Seyam08">Your Name</a>
+          </li>
+        </ul>
+
+        <Title>Lessons Learned</Title>
+        <ul>
+          <li>Managing conditional dependencies between form inputs</li>
+          <li>Schema-based validation with Zod resolver</li>
+          <li>Maintaining multi-step state persistence</li>
+          <li>Working with Shadcn UI and TailwindCSS for custom forms</li>
+          <li>Deepened TypeScript understanding in form validation logic</li>
+        </ul>
+      </>
+    ),
+  },
+  {
     preview: "https://pill-splitter-peach.vercel.app/",
     title: "Pill Splitter",
     description:
