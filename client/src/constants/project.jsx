@@ -243,13 +243,6 @@ export const projects = [
           />
         </p>
 
-        <Title>Authors</Title>
-        <ul>
-          <li>
-            <a href="https://www.github.com/Seyam08">Seyam Hossain</a>
-          </li>
-        </ul>
-
         <Title>Lessons Learned</Title>
         <ul>
           <li>Managing complex canvas interactions with React state</li>
@@ -403,13 +396,6 @@ export const projects = [
           />
         </p>
 
-        <Title>Authors</Title>
-        <ul>
-          <li>
-            <a href="https://github.com/Seyam08">Your Name</a>
-          </li>
-        </ul>
-
         <Title>Lessons Learned</Title>
         <ul>
           <li>Managing conditional dependencies between form inputs</li>
@@ -525,13 +511,6 @@ export const projects = [
           />
         </p>
 
-        <Title>Authors</Title>
-        <ul>
-          <li>
-            <a href="https://www.github.com/Seyam08">Seyam Hossain</a>
-          </li>
-        </ul>
-
         <Title>Lessons Learned</Title>
         <ul>
           <li>Managing complex canvas interactions with React state</li>
@@ -643,12 +622,7 @@ export const projects = [
             src="https://raw.githubusercontent.com/Seyam08/parking-app/main/park-reserve.PNG"
           />
         </p>
-        <Title>Authors</Title>
-        <ul>
-          <li>
-            <a href="https://www.github.com/Seyam08">Seyam Hossain</a>
-          </li>
-        </ul>
+
         <Title>Lessons Learned</Title>
         <ul>
           <li>Predictable state management with Redux</li>
@@ -770,12 +744,6 @@ export const projects = [
             src="https://raw.githubusercontent.com/Seyam08/Daily-Routine-App/main/daily-routine.PNG"
           />
         </p>
-        <Title>Authors</Title>
-        <ul>
-          <li>
-            <a href="https://www.github.com/Seyam08">Seyam Hossain</a>
-          </li>
-        </ul>
       </>
     ),
   },
