@@ -259,6 +259,152 @@ export const projects = [
     ),
   },
   {
+    preview: "https://express-typescript-graphql.onrender.com/",
+    title: "GraphQL CRUD System",
+    description:
+      "A simple CRUD API built with Express.js, TypeScript, GraphQL, and MongoDB. Includes a lightweight UI powered by Ruru HTML for testing queries and mutations.",
+    thumbnail:
+      "https://raw.githubusercontent.com/Seyam08/express-typeScript-graphql/refs/heads/main/screenshot.PNG",
+    stack: ["Express.js", "TypeScript", "GraphQL", "MongoDB"],
+    slug: "express-typescript-graphql",
+    repo: "https://github.com/Seyam08/express-typeScript-graphql",
+    content: (
+      <>
+        <Title>⚡ Features</Title>
+        <ul>
+          <li>
+            Manage <strong>Books</strong> and <strong>Authors</strong> with full
+            CRUD operations.
+          </li>
+          <li>
+            Query by <strong>ID</strong> or <strong>Name</strong>.
+          </li>
+          <li>Supports adding, updating, and deleting data.</li>
+          <li>
+            Simple UI with <strong>Ruru HTML</strong> for testing.
+          </li>
+        </ul>
+        <Title>🚀 Tech Stack</Title>
+        <ul>
+          <li>⚡ Express.js + TypeScript (Backend)</li>
+          <li>🔗 GraphQL (API Layer)</li>
+          <li>🍃 MongoDB + Mongoose (Database)</li>
+          <li>🖥️ Ruru HTML IDE (UI Playground)</li>
+        </ul>
+        <Title>▶️ Installation</Title>
+        <ol>
+          <li>
+            <p>Clone the repository:</p>
+            <CodeBlock>
+              git clone
+              https://github.com/Seyam08/express-typeScript-graphql.git
+            </CodeBlock>
+          </li>
+          <li>
+            <p>
+              Provide MongoDB connection in <code>.env</code>:
+            </p>
+            <CodeBlock>
+              MONGO_CONNECTION_STRING="mongodb://localhost:27017/graphql"
+            </CodeBlock>
+          </li>
+          <li>
+            <p>Install dependencies:</p>
+            <CodeBlock>npm install</CodeBlock>
+          </li>
+          <li>
+            <p>Start dev server:</p>
+            <CodeBlock>npm run dev</CodeBlock>
+          </li>
+          <li>
+            <p>Build:</p>
+            <CodeBlock>npm run build</CodeBlock>
+          </li>
+          <li>
+            <p>Run production server:</p>
+            <CodeBlock>npm start</CodeBlock>
+          </li>
+        </ol>
+        <Title>📖 Example Queries</Title>
+        <Title>Fetch all books and authors</Title>
+        <CodeBlock>{`query {
+  allBooks {
+    id
+    name
+    author { id name }
+  }
+  allAuthors { id name }
+}`}</CodeBlock>
+        <Title>Fetch author and book by ID</Title>
+        <CodeBlock>{`query {
+  authorById(id: "68e20964a7ad53a") { id name }
+  bookById(id: "68e2096d3da7ad53a") {
+    id name
+    author { id name }
+  }
+}`}</CodeBlock>
+        <Title>Fetch book and author by name</Title>
+        <CodeBlock>{`query {
+  authorByName(name: "Elif Shafak") { id name }
+  booksByName(name: "The Forty Rules of Love") {
+    id name
+    author { id name }
+  }
+}`}</CodeBlock>
+
+        <Title>✍️ Example Mutations</Title>
+        <Title>Add a new author</Title>
+        <CodeBlock>{`mutation {
+  addAuthor(name: "Elif Shafak") { id name }
+}`}</CodeBlock>
+
+        <Title>Add a new book</Title>
+        <CodeBlock>{`mutation {
+  addBook(authorName: "Elif Shafak", name: "The Forty Rules of Love") {
+    id name
+    author { id name }
+  }
+}`}</CodeBlock>
+
+        <Title>Update an author</Title>
+        <CodeBlock>{`mutation {
+  updateAuthor(id: "68e2096d3d64c6f53a", newName: "Elif Shafak") {
+    id name
+  }
+}`}</CodeBlock>
+
+        <Title>Update a Book</Title>
+        <CodeBlock>{`mutation {
+  updateBook(id: "68e2096d3d64c", newName: "The Forty Rules of Love") {
+    id name
+    author { id name }
+  }
+}`}</CodeBlock>
+
+        <Title>Delete a Book</Title>
+        <CodeBlock>{`mutation {
+  deleteBook(id: "68e2096d3d642c6f53a") { id name }
+}`}</CodeBlock>
+
+        <Title>Screenshots</Title>
+        <p>
+          <img
+            alt="App Screenshot"
+            src="https://raw.githubusercontent.com/Seyam08/express-typeScript-graphql/refs/heads/main/screenshot.PNG"
+          />
+        </p>
+        <Title>📌 Notes</Title>
+        <ul>
+          <li>
+            All queries & mutations can be tested with <strong>Ruru UI</strong>{" "}
+            or Postman/Insomnia.
+          </li>
+          <li>Ensure MongoDB is running before executing queries.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
     preview: "https://talent-seek.netlify.app/",
     title: "Multi-Step Form",
     description:
