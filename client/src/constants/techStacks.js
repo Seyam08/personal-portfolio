@@ -84,4 +84,9 @@ export const techStacks = [
     iconUrl:
       "https://img.shields.io/badge/Zustand-443e38?style=for-the-badge&logo=react&logoColor=white",
   },
+  {
+    stack: "GraphQL",
+    iconUrl:
+      "https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white",
+  },
 ];
