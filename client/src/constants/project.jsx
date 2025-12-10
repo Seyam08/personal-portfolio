@@ -116,6 +116,276 @@ export const projects = [
     ),
   },
   {
+    preview: "https://doclify.vercel.app/",
+    title: "Doclify — A Modern Blog Platform Built with Next.js",
+    description:
+      "Doclify is a modern, early-stage blog platform built with Next.js 16 (App Router). It focuses on performance, clean architecture, and a great writing experience through a Tiptap-powered editor. The platform includes Google OAuth authentication, Cloudinary image uploads, and a fully RSC-first structure for fast rendering. Although still actively in development, Doclify already supports core blogging workflows and is steadily growing with planned improvements like advanced caching, UI/UX enhancements, and better authoring tools. Some features—such as updating and deleting blog posts—are currently being built and will be added soon. Doclify continues to evolve quickly, introducing refinements, optimizations, and new features with each iteration.",
+    thumbnail:
+      "https://raw.githubusercontent.com/Seyam08/doclify/refs/heads/main/screenshot.png",
+    stack: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "NextJS",
+      "Cloudinary",
+      "Tailwind CSS",
+      "Zod",
+      "Tiptap-editor",
+      "NextAuth",
+      "React-hook-form",
+      "Shadcn",
+    ],
+    slug: "doclify",
+    repo: "https://github.com/Seyam08/doclify",
+    content: (
+      <>
+        <Title>🌟 Current Features</Title>
+        <ul>
+          <li>
+            🔐 <strong>Authentication</strong> – Secure login system powered by
+            Google OAuth via NextAuth v5
+            <ul>
+              <li>Automatic author profile creation</li>
+              <li>Protected dashboard routes</li>
+              <li>Session-based access control</li>
+            </ul>
+          </li>
+
+          <li>
+            📝 <strong>Content Management</strong> – Create and publish blog
+            posts
+            <ul>
+              <li>Rich text editor using Tiptap</li>
+              <li>Tagging & categorization</li>
+              <li>SEO-friendly slug generation</li>
+              <li>Cloudinary image uploads for thumbnails</li>
+            </ul>
+          </li>
+
+          <li>
+            🌍 <strong>Public Pages</strong> – Clean UI for browsing and reading
+            posts
+            <ul>
+              <li>Blog listing</li>
+              <li>Single post page</li>
+              <li>Author pages</li>
+              <li>Categories & tags</li>
+              <li>Featured posts</li>
+            </ul>
+          </li>
+
+          <li>
+            🛠️ <strong>Developer Experience</strong> – Modern tooling for faster
+            builds
+            <ul>
+              <li>Strict TypeScript setup</li>
+              <li>Zod validation schemes</li>
+              <li>React 19 + Next.js 16</li>
+              <li>Tailwind CSS v4 + Design tokens</li>
+              <li>Radix UI + Shadcn components</li>
+            </ul>
+          </li>
+        </ul>
+
+        <Title>🚀 Planned Features</Title>
+        <p>
+          <strong>Doclify is still in active development.</strong> Several
+          important improvements are coming soon:
+        </p>
+        <ul>
+          <li>🧹 Update & Delete blog posts (currently missing)</li>
+          <li>⚡ Improved caching & performance</li>
+          <li>🧩 Better internal tooling & DX</li>
+          <li>🎨 UI/UX improvements</li>
+          <li>📦 Deeper category/tag organization</li>
+        </ul>
+
+        <Title>🛠️ Tech Stack</Title>
+        <ul>
+          <li>
+            ⚛️ <strong>React 19</strong> – UI framework
+          </li>
+          <li>
+            ▲ <strong>Next.js 16 (App Router)</strong> – SSR, server actions
+          </li>
+          <li>
+            🔐 <strong>NextAuth v5</strong> – Authentication
+          </li>
+          <li>
+            🗄️ <strong>MongoDB + Mongoose</strong> – Database
+          </li>
+          <li>
+            📝 <strong>Tiptap</strong> – Rich text editor
+          </li>
+          <li>
+            🎨 <strong>Tailwind CSS v4</strong> – Styling system
+          </li>
+          <li>
+            ☁️ <strong>Cloudinary</strong> – Image uploads
+          </li>
+          <li>
+            🧪 <strong>Zod</strong> – Input validation
+          </li>
+          <li>
+            🔧 <strong>Radix UI / Shadcn</strong> – UI components
+          </li>
+        </ul>
+
+        <Title>📂 Project Structure</Title>
+        <p>
+          <CodeBlock>
+            {`📂 src
+├── 📂 actions            # Server actions (business logic)
+│   ├── 📂 post           # Blog post operations
+│   ├── 📂 author         # Author profile operations
+│   └── 📂 helper         # Validation helpers
+├── 📂 app                # Next.js App Router
+│   ├── 📂 (public)       # Public-facing pages
+│   └── 📂 dashboard      # Protected routes
+├── 📂 components         # Shared UI components
+├── 📂 lib                # Config utilities (db, cloudinary, auth helpers)
+├── 📂 models             # Mongoose models
+├── 📂 types              # Extended TypeScript types
+└── 📂 zod-schemas        # Zod validation schemas`}
+          </CodeBlock>
+        </p>
+
+        <Title>🗺️ Routing Overview</Title>
+        <ul>
+          <li>
+            <strong>Public Routes</strong>
+            <ul>
+              <li>/ – Homepage</li>
+              <li>/blog – All blogs</li>
+              <li>/blog/[slug] – Single blog</li>
+              <li>/author – Authors</li>
+              <li>/author/[username] – Author profile</li>
+              <li>/categories – All categories</li>
+              <li>/categories/[category] – Single category</li>
+              <li>/tags – All tags</li>
+              <li>/tags/[tag] – Single tag</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Dashboard (Authenticated)</strong>
+            <ul>
+              <li>/dashboard</li>
+              <li>/dashboard/me</li>
+              <li>/dashboard/add-post</li>
+            </ul>
+          </li>
+        </ul>
+
+        <Title>🔄 Core Flows</Title>
+        <ul>
+          <li>
+            ✍️ <strong>Blog Post Creation</strong>
+            <ul>
+              <li>Write content with Tiptap</li>
+              <li>Upload thumbnail to Cloudinary</li>
+              <li>Zod schema validation</li>
+              <li>Slug creation using slugify</li>
+              <li>Save in MongoDB with metadata</li>
+            </ul>
+          </li>
+
+          <li>
+            🔑 <strong>Authentication</strong>
+            <ul>
+              <li>User logs in with Google</li>
+              <li>NextAuth callback handles profile</li>
+              <li>Author document created if missing</li>
+              <li>Session extended with username</li>
+            </ul>
+          </li>
+        </ul>
+
+        <Title>📦 Installation</Title>
+        <ol>
+          <li>
+            <p>Clone the repository:</p>
+            <p>
+              <CodeBlock>
+                git clone https://github.com/Seyam08/doclify.git
+              </CodeBlock>
+            </p>
+          </li>
+
+          <li>
+            <p>Navigate to project directory:</p>
+            <p>
+              <CodeBlock>cd doclify</CodeBlock>
+            </p>
+          </li>
+
+          <li>
+            <p>Install dependencies:</p>
+            <p>
+              <CodeBlock>npm install</CodeBlock>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Rename <strong>.env-example</strong> to{" "}
+              <strong>.env.local</strong> and configure your credentials.
+            </p>
+          </li>
+
+          <li>
+            <p>Start application:</p>
+            <p>
+              <CodeBlock>npm run dev</CodeBlock>
+            </p>
+
+            <p>Build:</p>
+            <p>
+              <CodeBlock>npm run build</CodeBlock>
+            </p>
+
+            <p>Preview:</p>
+            <p>
+              <CodeBlock>npm start</CodeBlock>
+            </p>
+          </li>
+
+          <li>
+            <p>Open package.json to view all scripts.</p>
+          </li>
+        </ol>
+
+        <Title>🌱 Environment Variables</Title>
+        <ul>
+          <li>`MONGO_DB_CONNECTION_STRING` – MongoDB connection string</li>
+          <li>`CLOUDINARY_NAME` – Cloudinary cloud name</li>
+          <li>`CLOUDINARY_API_KEY` – Cloudinary API key</li>
+          <li>`CLOUDINARY_API_SECRET` – Cloudinary secret</li>
+          <li>`CLOUDINARY_DOCLIFY_BLOG_THUMB_FOLDER` – Cloudinary folder</li>
+          <li>`AUTH_GOOGLE_ID` – Google OAuth client ID</li>
+          <li>`AUTH_GOOGLE_SECRET` – OAuth client secret</li>
+          <li>`AUTH_SECRET` – Session encryption secret</li>
+          <li>`AUTH_URL` – Auth connection URL</li>
+          <li>`AUTH_TRUST_HOST` – Trusted host value</li>
+          <li>`AUTHOR_LINK` – Author external profile link</li>
+        </ul>
+
+        <Title>🧩 Important Design Decisions</Title>
+        <ul>
+          <li>Server Actions instead of API Routes</li>
+          <li>
+            React’s <code>cache()</code> for deduping database calls
+          </li>
+          <li>Slug-based URLs for SEO</li>
+          <li>Auto-generated usernames via slugify</li>
+          <li>Flexible Mongoose schema design</li>
+        </ul>
+      </>
+    ),
+  },
+  {
     preview: "https://sketch-flow-view.netlify.app/",
     title: "Sketch Flow",
     description:
