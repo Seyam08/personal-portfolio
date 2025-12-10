@@ -20,6 +20,11 @@ export const techStacks = [
       "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
   },
   {
+    stack: "NextJS",
+    iconUrl:
+      "https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white",
+  },
+  {
     stack: "Redux",
     iconUrl:
       "https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white",
@@ -88,5 +93,10 @@ export const techStacks = [
     stack: "GraphQL",
     iconUrl:
       "https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white",
+  },
+  {
+    stack: "React-hook-form",
+    iconUrl:
+      "https://img.shields.io/badge/React%20Hook%20Form-EC5990?logo=reacthookform&logoColor=fff",
   },
 ];
