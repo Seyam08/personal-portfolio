@@ -16,11 +16,14 @@ export default function About() {
         <div className="animate-up md:basis-10/12">
           <Paragraph customClass={"mb-3"}>
             👋 Hi there! I&apos;m a passionate web application developer from
-            Dhaka, Bangladesh. Currently immersed in mastering the MERN stack.
-            While my academic roots are in BBA, my true passion lies in coding
-            and development. My expertise spans JavaScript, React.js, Redux,
-            TypeScript, Tailwind.css, HTML, CSS, Git, GitHub and foundational
-            Express.js and REST APIs.
+            Dhaka, Bangladesh. Currently immersed in mastering the Full-stack.
+            My true passion lies in coding and development. Skilled in
+            JavaScript, React.js, NextJS, Redux, TypeScript, Tailwind CSS,
+            Express.js, REST APIs, and tools like JWT, RTK Query, Multer,
+            Git/GitHub. Currently honing expertise in the Full-stack and eager
+            to contribute to innovative projects that solve real-world problems.
+            Committed to continuous learning and growth in both frontend and
+            backend development.
           </Paragraph>
           <Paragraph customClass={"mb-3"}>
             📚 Learning is a never-ending journey for me. I may have a bit of

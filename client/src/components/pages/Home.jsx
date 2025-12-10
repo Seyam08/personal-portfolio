@@ -16,10 +16,15 @@ export default function Home() {
           <Emoji customClass={"animate-up"}>👋</Emoji>
           <Heading customClass={"animate-up"}>Hello! Seyam here</Heading>
           <Paragraph customClass={"my-3 animate-up"}>
-            I&apos;m a passionate web application developer, currently immersed
-            in mastering the MERN stack. My expertise spans JavaScript,
-            React.js, Redux, TypeScript, Tailwind.css, HTML, CSS, Git, GitHub
-            and foundational Express.js and REST APIs.
+            👋 Hi there! I&apos;m a passionate web application developer from
+            Dhaka, Bangladesh. Currently immersed in mastering the Full-stack.
+            My true passion lies in coding and development. Skilled in
+            JavaScript, React.js, NextJS, Redux, TypeScript, Tailwind CSS,
+            Express.js, REST APIs, and tools like JWT, RTK Query, Multer,
+            Git/GitHub. Currently honing expertise in the Full-stack and eager
+            to contribute to innovative projects that solve real-world problems.
+            Committed to continuous learning and growth in both frontend and
+            backend development.
           </Paragraph>
         </div>
         <div className="md:basis-1/4 flex justify-center md:items-end md:justify-end px-2">
