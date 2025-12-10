@@ -26,11 +26,11 @@ export default function ListItem({
             {/* {trimSentence(description, 15)} */}
           </Paragraph>
         </div>
-        <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+        <div className="flex flex-row flex-wrap md:mb-1 mt-2 md:mt-0">
           {tags.map((tag, key) => (
             <span
               key={key}
-              className="text-xs px-1 py-0.5 text-secondary border border-thin rounded-md"
+              className="text-xs px-1 py-0.5 mr-2 mb-1 text-secondary border border-thin rounded-md"
             >
               {tag}
             </span>
