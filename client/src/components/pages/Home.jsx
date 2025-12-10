@@ -16,18 +16,18 @@ export default function Home() {
           <Emoji customClass={"animate-up"}>👋</Emoji>
           <Heading customClass={"animate-up"}>Hello! Seyam here</Heading>
           <Paragraph customClass={"my-3 animate-up"}>
-            👋 Hi there! I&apos;m a passionate web application developer from
-            Dhaka, Bangladesh. Currently immersed in mastering the Full-stack.
-            My true passion lies in coding and development. Skilled in
-            JavaScript, React.js, NextJS, Redux, TypeScript, Tailwind CSS,
-            Express.js, REST APIs, and tools like JWT, RTK Query, Multer,
-            Git/GitHub. Currently honing expertise in the Full-stack and eager
-            to contribute to innovative projects that solve real-world problems.
-            Committed to continuous learning and growth in both frontend and
-            backend development.
+            I&apos;m a passionate web application developer from Dhaka,
+            Bangladesh. Currently immersed in mastering the Full-stack. My true
+            passion lies in coding and development. Skilled in JavaScript,
+            React.js, NextJS, Redux, TypeScript, Tailwind CSS, Express.js, REST
+            APIs, and tools like JWT, RTK Query, Multer, Git/GitHub. Currently
+            honing expertise in the Full-stack and eager to contribute to
+            innovative projects that solve real-world problems. Committed to
+            continuous learning and growth in both frontend and backend
+            development.
           </Paragraph>
         </div>
-        <div className="md:basis-1/4 flex justify-center md:items-end md:justify-end px-2">
+        <div className="md:basis-1/4 flex justify-center md:items-center md:justify-end px-2">
           <div className="w-40 h-40">
             <img
               className="p-1 rounded-full ring-4 ring-teal-400"
