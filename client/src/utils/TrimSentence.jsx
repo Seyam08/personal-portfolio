@@ -14,7 +14,7 @@ export function TrimSentence({ sentence, numberOfWords, link }) {
   return (
     <>
       {words.slice(0, numberOfWords).join(" ")}{" "}
-      <Link to={link} className="text-teal-500">
+      <Link to={link} className="text-teal-500" target="_blank">
         ...more
       </Link>
     </>
