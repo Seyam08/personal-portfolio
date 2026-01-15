@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { TrimSentence } from "../../utils/TrimSentence";
 import Paragraph from "./Paragraph";
 import Title from "./Title";
@@ -11,12 +12,20 @@ export default function ListItem({
 }) {
   return (
     <div className="flex flex-col bg-secondary md:flex-row my-8 border-thin rounded-lg animate-up space-x-0 md:space-x-5 px-2">
-      <div className="md:basis-2/6 flex items-center">
-        <img className="rounded-md" src={thumbnail} alt={title} />
+      <div className="md:basis-2/6 flex items-center group overflow-hidden">
+        <Link to={link} target="_blank">
+          <img
+            className="rounded-md group-hover:scale-110 transition-all duration-500"
+            src={thumbnail}
+            alt={title}
+          />
+        </Link>
       </div>
       <div className="flex flex-col justify-between py-3 mx-3 md:basis-4/6">
         <div>
-          <Title customClass={"mb-5"}>{title}</Title>
+          <Link to={link} target="_blank">
+            <Title customClass={"mb-5 hover:underline"}>{title}</Title>
+          </Link>
           <Paragraph customClass={"mb-3"}>
             <TrimSentence
               sentence={description}
