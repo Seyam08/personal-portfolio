@@ -9,7 +9,7 @@ const schema = z.object({
 });
 
 const inputBase =
-  "w-full bg-transparent border-b border-slate-300 dark:border-gray-700 pb-2 pt-1 text-primary placeholder:text-tertiary focus:outline-none transition-[border-color,border-bottom-width] duration-200 hover:border-b-2 hover:border-slate-400 dark:hover:border-gray-500 focus:border-b-2 focus:border-teal-500 dark:focus:border-teal-400 text-sm md:text-base";
+  "w-full bg-transparent border-b border-slate-300 dark:border-gray-700 pb-2 pt-1 text-primary placeholder:text-tertiary focus:outline-none transition-[border-color] duration-200 hover:border-slate-400 dark:hover:border-gray-500 focus:border-teal-500 dark:focus:border-teal-400 text-sm md:text-base";
 
 const inputError =
   "border-red-400 dark:border-red-500 hover:border-red-500 dark:hover:border-red-400 focus:border-red-500 dark:focus:border-red-400";
@@ -35,9 +35,6 @@ export default function ContactForm({ customClass }) {
     >
       {/* Name */}
       <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold uppercase tracking-widest text-secondary select-none">
-          Name
-        </label>
         <input
           {...register("name")}
           type="text"
@@ -53,9 +50,6 @@ export default function ContactForm({ customClass }) {
 
       {/* Email */}
       <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold uppercase tracking-widest text-secondary select-none">
-          Email
-        </label>
         <input
           {...register("email")}
           type="email"
@@ -71,9 +65,6 @@ export default function ContactForm({ customClass }) {
 
       {/* Message */}
       <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold uppercase tracking-widest text-secondary select-none">
-          Message
-        </label>
         <textarea
           {...register("message")}
           rows={4}
@@ -92,12 +83,9 @@ export default function ContactForm({ customClass }) {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="group relative inline-flex items-center gap-2 px-7 py-2.5 rounded-lg font-medium text-sm md:text-base bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-500 text-white transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+          className="group inline-flex items-center gap-2 px-7 py-2.5 rounded-lg font-medium text-sm md:text-base bg-tertiary hover:bg-primary text-primary border border-transparent hover:border-thin transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {isSubmitting ? "Sending..." : "Send Message"}
-          <span className="inline-block transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-            ↗
-          </span>
         </button>
 
         {isSubmitSuccessful && (
