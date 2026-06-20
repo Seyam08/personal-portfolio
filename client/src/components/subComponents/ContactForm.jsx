@@ -2,6 +2,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
+const CONTACT_FORM_API_ENDPOINT = import.meta.env
+  .VITE_CONTACT_FORM_API_ENDPOINT;
+
 const schema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
@@ -20,11 +23,27 @@ export default function ContactForm({ customClass }) {
     handleSubmit,
     formState: { errors, isSubmitting, isSubmitSuccessful },
     reset,
+    setError,
   } = useForm({ resolver: zodResolver(schema) });
 
-  const onSubmit = (data) => {
-    console.log("Form submitted:", data);
-    reset();
+  const onSubmit = async (data) => {
+    try {
+      const res = await fetch(CONTACT_FORM_API_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        throw new Error("Request failed");
+      }
+
+      reset();
+    } catch (error) {
+      setError("root", {
+        message: "Failed to send message. Please try again.",
+      });
+    }
   };
 
   return (
@@ -88,9 +107,15 @@ export default function ContactForm({ customClass }) {
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
 
-        {isSubmitSuccessful && (
+        {isSubmitSuccessful && !errors.root && (
           <span className="text-sm text-teal-600 dark:text-teal-400 animate-in">
             Message sent!
+          </span>
+        )}
+
+        {errors.root && (
+          <span className="text-sm text-red-500 dark:text-red-400 animate-in">
+            {errors.root.message}
           </span>
         )}
       </div>
