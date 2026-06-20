@@ -1,3 +1,4 @@
+import ContactForm from "../subComponents/ContactForm";
 import ContactInfo from "../subComponents/ContactInfo";
 import Heading from "../subComponents/Heading";
 import Paragraph from "../subComponents/Paragraph";
@@ -11,6 +12,7 @@ export default function Contact() {
         ASAP.
       </Paragraph>
       <ContactInfo customClass={"mt-10 animate-up"} />
+      <ContactForm customClass={"mt-14 animate-up"} />
     </>
   );
 }
