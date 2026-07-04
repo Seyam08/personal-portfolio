@@ -386,6 +386,63 @@ export const projects = [
     ),
   },
   {
+    preview: "https://asadborhan.com/",
+    title: "Asad Borhan Portfolio",
+    description:
+      "A polished personal portfolio website built for a video production manager, designed to showcase cinematic work, communicate brand value, and drive client inquiries through a modern, conversion-focused experience.",
+    thumbnail: "/projects/asad-borhan.png",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn",
+      "MongoDB",
+    ],
+    slug: "asad-borhan-portfolio",
+    repo: "https://github.com/Seyam08/",
+    content: (
+      <>
+        <Title>🌟 Project Overview</Title>
+        <ul>
+          <li>Built as a personal brand website for a creative professional</li>
+          <li>
+            Focused on visual storytelling, strong first impressions, and lead
+            generation
+          </li>
+          <li>Designed to feel cinematic, modern, and conversion-oriented</li>
+        </ul>
+
+        <Title>⚙️ What It Includes</Title>
+        <ul>
+          <li>Hero section with strong brand positioning</li>
+          <li>Work showcase and portfolio presentation</li>
+          <li>Contact and inquiry flow for client conversion</li>
+          <li>Modern responsive UI with polished interactions</li>
+        </ul>
+
+        <Title>🛠️ Tech Stack</Title>
+        <ul>
+          <li>Next.js for a fast, scalable app router experience</li>
+          <li>React + TypeScript for maintainable UI logic</li>
+          <li>Tailwind CSS + Shadcn for modern design system styling</li>
+        </ul>
+
+        <Title>💡 Key Takeaway</Title>
+        <ul>
+          <li>
+            Combined branding, UX, and development to create a portfolio that
+            feels premium and client-ready
+          </li>
+        </ul>
+        <Title>Screenshots</Title>
+        <p>
+          <img alt="App Screenshot" src="/projects/asad-borhan.png" />
+        </p>
+      </>
+    ),
+  },
+  {
     preview: "https://sketch-flow-view.netlify.app/",
     title: "Sketch Flow",
     description:
