@@ -1,6 +1,7 @@
 import image from "../../assets/image/profile.png";
 import { projects } from "../../constants/project";
 import Emoji from "../subComponents/Emoji";
+import Experience from "../subComponents/Experience";
 import Heading from "../subComponents/Heading";
 import ListItem from "../subComponents/ListItem";
 import Paragraph from "../subComponents/Paragraph";
@@ -42,6 +43,9 @@ export default function Home() {
         <Title customClass={"animate-up  md:basis-2/12"}>Tech Stack</Title>
         <TechStack customClass={"animate-up md:basis-10/12"} />
       </div>
+
+      {/* Experience */}
+      <Experience customClass={"mt-14"} />
 
       {/* Pinned Projecks  */}
       <Title customClass={"mt-14 mb-4 animate-up"}>Pinned Projects</Title>
