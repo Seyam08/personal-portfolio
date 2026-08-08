@@ -1,4 +1,5 @@
 import ContactInfo from "../subComponents/ContactInfo";
+import Experience from "../subComponents/Experience";
 import Heading from "../subComponents/Heading";
 import Paragraph from "../subComponents/Paragraph";
 import TechStack from "../subComponents/TechStack";
@@ -50,6 +51,8 @@ export default function About() {
         <Title customClass={"animate-up  md:basis-2/12"}>Tech Stack</Title>
         <TechStack customClass={"animate-up md:basis-10/12"} />
       </div>
+      {/* Experience */}
+      <Experience customClass={"mt-10"} />
       {/* Contact  */}
       <div className="flex flex-col gap-4 mt-10 md:flex-row md:gap-9">
         <Title customClass={"animate-up md:basis-2/12"}>Contact</Title>
