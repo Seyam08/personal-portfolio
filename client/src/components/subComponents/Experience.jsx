@@ -80,11 +80,6 @@ function ExperienceCard({ item }) {
           <span className="text-[10px] md:text-xs px-2 py-0.5 border-thin rounded-full text-tertiary">
             {item.type}
           </span>
-          {item.description && (
-            <p className="text-xs md:text-sm text-tertiary basis-full mt-1">
-              {item.description}
-            </p>
-          )}
         </div>
       </div>
       <div className="shrink-0 flex flex-col items-end gap-1 text-xs md:text-sm font-medium tabular-nums text-tertiary text-right">
@@ -104,7 +99,7 @@ export default function Experience({ customClass }) {
 
       {/* Timeline */}
       <div className="relative overflow-hidden">
-        <div className="absolute left-1.75 md:left-2.5 inset-y-0 w-px bg-slate-300 dark:bg-gray-800" />
+        <div className="absolute left-2 md:left-2.5 inset-y-0 w-px bg-slate-300 dark:bg-gray-800" />
 
         <div className="flex flex-col gap-4 md:gap-6">
           {experiences.map((item) => (
@@ -112,7 +107,7 @@ export default function Experience({ customClass }) {
               key={`${item.company}-${item.role}`}
               className="flex items-center gap-4 md:gap-6"
             >
-              <div className="shrink-0 w-3.75 md:w-5 flex justify-center z-10">
+              <div className="shrink-0 w-4 md:w-5 flex justify-center z-10">
                 <motion.div
                   className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-teal-400"
                   initial={{ scale: 0 }}

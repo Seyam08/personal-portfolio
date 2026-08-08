@@ -13,7 +13,6 @@ export const experiences = [
     duration: "2 mos",
     logo: bzmLogo,
     href: "https://bzmgraphics.com/",
-    description: "",
   },
   {
     role: "Frontend Developer (Next.js)",
@@ -25,8 +24,6 @@ export const experiences = [
     duration: "4 mos",
     logo: bzmLogo,
     href: "https://bzmgraphics.com/",
-    description:
-      "Working as a Frontend Developer (Next.js) Intern, building and maintaining modern, responsive web applications using Next.js and React.",
   },
   {
     role: "Freelance Web Developer",
@@ -38,7 +35,6 @@ export const experiences = [
     duration: "3 yrs 8 mos",
     logo: fiverrLogo,
     href: "https://www.fiverr.com/",
-    description: "",
   },
   {
     role: "Freelance Web Developer",
@@ -50,6 +46,5 @@ export const experiences = [
     duration: "3 yrs 1 mo",
     logo: upworkLogo,
     href: "https://www.upwork.com/",
-    description: "",
   },
 ];
