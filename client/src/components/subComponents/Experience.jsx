@@ -80,11 +80,6 @@ function ExperienceCard({ item }) {
           <span className="text-[10px] md:text-xs px-2 py-0.5 border-thin rounded-full text-tertiary">
             {item.type}
           </span>
-          {item.description && (
-            <p className="text-xs md:text-sm text-tertiary basis-full mt-1">
-              {item.description}
-            </p>
-          )}
         </div>
       </div>
       <div className="shrink-0 flex flex-col items-end gap-1 text-xs md:text-sm font-medium tabular-nums text-tertiary text-right">
